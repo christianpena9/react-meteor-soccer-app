@@ -5,7 +5,7 @@ import injectTabEventPlugin from 'react-tap-event-plugin';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import App from '../imports/ui/App';
-import Example from '../imports/ui/Example';
+import New from '../imports/ui/New';
 import Lost from '../imports/ui/Lost';
 
 injectTabEventPlugin();
@@ -15,7 +15,7 @@ Meteor.startup(() => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={App}/>
-                <Route path="/example" component={Example}/>
+                <Route path="/new" component={New}/>
                 <Route path="*" component={Lost}/>
             </Switch>
         </BrowserRouter>
